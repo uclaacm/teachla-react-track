@@ -1,3 +1,5 @@
 # teachla-react-track
 
-🚧 under construction 🚧
+Training material for ACM Teach LA's react track! 
+
+🚧 still under construction 🚧
