@@ -1,6 +1,60 @@
 # Week 3: First React Code
 
-Welcome! Today we will finally begin taking a closer look at React!
+Welcome! Today we will finally begin taking a closer look at React! But first a little bit of Git!
+
+## Basic Git
+
+```
+git checkout main
+git pull origin main
+git checkout [WORKING BRANCH]
+git pull origin main
+```
+
+Clone the repo
+```
+git clone https://github.com/uclaacm/(repo name)
+```
+Create new local branch and checkout (switch) to it
+```
+	git checkout -b new_branch_name
+```
+Delete local branch
+```
+	git branch -D branch_name
+```
+Delete remote branch
+```
+	git push origin –delete branch_name
+```
+Commit and push single file
+```
+	git add file_name
+	git commit -m “Commit message”
+	git push origin —-set-upstream branch_name
+```
+Commit and push all changes
+```
+	git add *
+	git commit -m “Commit message” -m “description”
+	git push origin –-set-upstream branch_name
+```
+git Commit and push to main (FOR DEPENDENCIES/FINISHED COMPONENT)
+```
+	git checkout main
+	git add file_name
+	git commit -m “Commit message”
+	git push origin –-set-upstream main
+```
+Merge, commit, push to main
+```
+	git checkout main
+	git merge branch_name –squash
+	git commit
+	git push origin –-set-upstream main
+```
+
+Okay moving on :)
 
 ## Page Updating in React
 
