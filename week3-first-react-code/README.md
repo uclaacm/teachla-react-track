@@ -17,41 +17,41 @@ git clone https://github.com/uclaacm/(repo name)
 ```
 Create new local branch and checkout (switch) to it
 ```
-	git checkout -b new_branch_name
+git checkout -b new_branch_name
 ```
 Delete local branch
 ```
-	git branch -D branch_name
+git branch -D branch_name
 ```
 Delete remote branch
 ```
-	git push origin –delete branch_name
+git push origin –delete branch_name
 ```
 Commit and push single file
 ```
-	git add file_name
-	git commit -m “Commit message”
-	git push origin —-set-upstream branch_name
+git add file_name
+git commit -m “Commit message”
+git push origin —-set-upstream branch_name
 ```
 Commit and push all changes
 ```
-	git add *
-	git commit -m “Commit message” -m “description”
-	git push origin –-set-upstream branch_name
+git add *
+git commit -m “Commit message” -m “description”
+git push origin –-set-upstream branch_name
 ```
 git Commit and push to main (FOR DEPENDENCIES/FINISHED COMPONENT)
 ```
-	git checkout main
-	git add file_name
-	git commit -m “Commit message”
-	git push origin –-set-upstream main
+git checkout main
+git add file_name
+git commit -m “Commit message”
+git push origin –-set-upstream main
 ```
 Merge, commit, push to main
 ```
-	git checkout main
-	git merge branch_name –squash
-	git commit
-	git push origin –-set-upstream main
+git checkout main
+git merge branch_name –squash
+git commit
+git push origin –-set-upstream main
 ```
 
 Okay moving on :)
