@@ -6,22 +6,21 @@ Training material for ACM Teach LA's training track! This material covers HTML, 
 
 ### Week 1
 - HTML Introduction
-- JavaScript Review
+- JavaScript Overview
 ### Week 2
 - React Introduction
 - Environment Configuration
 ### Week 3
-- React Tutorial
-- CSS Intro
+- Mini-Project 1: Guided game build in React
 ### Week 4
+- CSS Intro
 - GitHub Introduction
-- Edit personal page
+- Mini-Project 2: Personal Profile Page
 ### Week 5
-- Finish personal pag
+- Finish Mini-Project Single Page Appliation (SPA)
 - Route pages
 ### Week 6 & 7
-- Start on personal project
-- Build mini-project start to end
+- Personal Project Start to End
 ### Week 9
 - Skill assessment
 ### Week 10
