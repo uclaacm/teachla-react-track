@@ -3,10 +3,10 @@
 - [Node.js](#nodejs)
   - [npm and Yarn](#npm-and-yarn)
   - [Installing Node.js and npm](#installing-nodejs-and-npm)
-  - [Installing Yarn](#installing-yarn)
 - [React](#react)
-- [Create React App](#create-react-app)
-  - [Using Yarn](#using-yarn)
+- [Create React App](#create-react-app-deprecated)
+- [Install Vite](#install-vite)
+- [Using Vite](#using-vite)
   - [Running the App](#running-the-app)
   - [Hello World](#hello-world)
 - [Additional Resources](#additional-resources)
@@ -17,20 +17,11 @@ Welcome! Today we will introduce relevant technologies and set up our developmen
 ## Node.js
 Node.js is an open-source JavaScript runtime envinronment that will enable us to execute JavaScript code outside of the browser. It will provide the infrastructure for us to develop web applications.
 
-### npm and Yarn
+### npm
 npm (Node Package Manager) is Node.js's default package manager. It is used to to manage and install external packages and modules for our applications. It has access to over 1 million packages in a database known as the npm registry.
-
-Yarn is another package manager, which we prefer over npm because of speed and security benefits.
 
 ### Installing Node.js and npm
 Install Node.js (and along with it npm) at [the download link](https://nodejs.org/en/download/). Use the LTS version for your operating system.
-
-### Installing Yarn
-Install Yarn with the following command in your terminal:
-
-```
-sudo npm install -g yarn
-```
 
 ## React
 React is the most popular JavaScript framework for developing front-end applications. It is primarily maintained by Meta. Here is a graph of question activity from Stack Overflow trends comparing React with its top competitors:
@@ -48,8 +39,11 @@ The fundamental building blocks of React applications are components. The modula
 **Learn-Once, Write Everywhere:**
 React makes no assumptions about the rest of your technology stack, and will work seamlessly with other technologies that you integrate with your application.
 
-## Create React App
-Create React App is a fully integrated environment that will allow you to develop a web application without any additional setup. To create a template application using this tool, run the following command:
+## Create React App (Deprecated)
+⚠️ WARNING: CRA has been deprecated for new projects and React suggests to use modern frameworks like Next.js and Vite as new build tools. 
+
+Create React App is a fully integrated environment that will allow you to develop a web application without any additional setup. 
+To create a template application using this tool, run the following command:
 
 ```
 npx create-react-app <app name>
@@ -67,24 +61,33 @@ Both of these files should be committed in source control if you use npm.
 
 * The `node_modules` folder contains the dependencies themselves. Its contents should not be committed to source control because other users can generate it themselves using the two aforementioned files.
 
-### Using Yarn
-Yarn generates its own equivalent of `package-lock.json`, called `yarn.lock`. To use Yarn, delete the `package-lock.json file`, and run the command
+### Install Vite
+Vite is a modern build tool and development server for JavaScript projects. Since CRA was depracted in 2025, we started using Vite as our main build tool for its speed and simplicity. To install Vite, delete the react-scripts dependency (if migrating from Create React App), and run the command
 
 ```
-yarn install
+npm install vite
 ```
 
-The `yarn.lock` file should now appear in your directory, and you can now use Yarn instead of npm.
+### Using Vite
+Vite generates its own configuration file, called vite.config.js, which allows customization of build settings. To initialize Vite, run the command
+
+```
+npm create vite@latest <app name>
+```
+
+The vite.config.js file should now appear in your directory, allowing you to customize build settings and run your app.
 
 ### Running the App
 To run the app, use the command
 ```
-yarn start
+npm install
+npm run dev
 ```
 
 The following screen should launch in your browser:
 
 ![startup screen with React logo and editing instructions](./images/react-startup.png)
+!!!ADD NEW IMAGE FOR VITE HERE!!!
 
 ### Hello World
 
